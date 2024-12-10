@@ -192,14 +192,14 @@
                         <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Company</h4>
                         <a class="btn btn-link" href="">About Us</a>
                         <a class="btn btn-link" href="">Contact Us</a>
-                        <a class="btn btn-link" href="">Reservation</a>
+                        <a class="btn btn-link" href="menu.html">Menu</a>
                         <a class="btn btn-link" href="">Privacy Policy</a>
                         <a class="btn btn-link" href="">Terms & Condition</a>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
                         <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Bd ANFA , Casablanca , Morocco</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+112 512121212</p>
                         <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
@@ -215,14 +215,124 @@
                         <h5 class="text-light fw-normal">Sunday</h5>
                         <p>10AM - 08PM</p>
                     </div> -->
-                    <div class="col-lg-4 col-md-6">
-                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Newsletter</h4>
-                        <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                        <div class="position-relative mx-auto" style="max-width: 400px;">
-                            <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                        </div>
+                      <div class="col-lg-4 col-md-6">
+                    <form id="newsletterForm" action="submti" method="POST">
+                            <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Newsletter</h4>
+                            <p>Hungry for great deals? Subscribe to our newsletter for exclusive offers, promotions!</p>
+                            <div class="position-relative mx-auto" style="max-width: 400px;">
+                                <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="email" name="email" placeholder="Your email" required>
+                                <button type="submit" name="submit" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                            </div>
+                    </form>
                     </div>
+                    
+<script>document.getElementById("newsletterForm").addEventListener("submit", function (e) {
+    e.preventDefault(); // Stop form from redirecting
+
+    const form = e.target;
+    const formData = new FormData(form);
+    const url = "https://script.google.com/macros/s/AKfycbw0e86g6UDVLISw1gwPBZ6tiX4CN_IFjVcNsToAhzDYPEMz32GXbfjv56gQqKdqbsHp/exec";
+
+    // Send the form data to the Apps Script URL
+    fetch(url, {
+        method: "POST",
+        body: formData,
+    })
+    .then(response => response.text()) // Parse response as plain text
+    .then(data => {
+        if (data.trim() === "Success") {
+            // Show a custom pop-up with the success message
+            showCustomPopup("Thank you for subscribing!");
+        } else {
+            // Show a custom pop-up with the error message
+            showCustomPopup("An error occurred: " + data);
+        }
+    })
+    .catch(error => {
+        console.error("Error:", error);
+        // Show a custom pop-up with the error details
+        showCustomPopup("An error occurred. Please try again.");
+    });
+});
+// Function to display a creative custom pop-up
+function showCustomPopup(message) {
+    // Create the overlay background
+    const overlay = document.createElement("div");
+    overlay.style.position = "fixed";
+    overlay.style.top = "0";
+    overlay.style.left = "0";
+    overlay.style.width = "100%";
+    overlay.style.height = "100%";
+    overlay.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+    overlay.style.zIndex = "999";
+    overlay.style.display = "flex";
+    overlay.style.justifyContent = "center";
+    overlay.style.alignItems = "center";
+
+    // Create the pop-up container
+    const popup = document.createElement("div");
+    popup.style.position = "relative";
+    popup.style.width = "300px";
+    popup.style.padding = "20px";
+    popup.style.backgroundColor = "#fff";
+    popup.style.borderRadius = "10px";
+    popup.style.textAlign = "center";
+    popup.style.boxShadow = "0px 4px 20px rgba(0, 0, 0, 0.2)";
+    popup.style.animation = "fadeIn 0.5s ease-out";
+
+    // Add the message to the pop-up
+    const messageText = document.createElement("p");
+    messageText.textContent = message;
+    messageText.style.margin = "0";
+    messageText.style.fontSize = "18px";
+    messageText.style.color = "#333";
+    messageText.style.fontWeight = "bold";
+    popup.appendChild(messageText);
+
+    // Add a success/checkmark icon
+    const icon = document.createElement("div");
+    icon.innerHTML = "✔️";
+    icon.style.fontSize = "40px";
+    icon.style.marginTop = "10px";
+    icon.style.color = "#28a745";
+    popup.prepend(icon);
+
+    // Add a close button
+    const closeButton = document.createElement("button");
+    closeButton.textContent = "Close";
+    closeButton.style.marginTop = "15px";
+    closeButton.style.padding = "10px 20px";
+    closeButton.style.backgroundColor = "#28a745";
+    closeButton.style.border = "none";
+    closeButton.style.color = "#fff";
+    closeButton.style.borderRadius = "5px";
+    closeButton.style.cursor = "pointer";
+    closeButton.style.transition = "background-color 0.3s";
+    closeButton.onmouseover = () => (closeButton.style.backgroundColor = "#218838");
+    closeButton.onmouseout = () => (closeButton.style.backgroundColor = "#28a745");
+    closeButton.onclick = function () {
+        document.body.removeChild(overlay); // Remove the overlay and pop-up when clicked
+    };
+    popup.appendChild(closeButton);
+
+    // Append the pop-up to the overlay
+    overlay.appendChild(popup);
+
+    // Append the overlay to the body
+    document.body.appendChild(overlay);
+
+    // Keyframes for fade-in animation
+    const style = document.createElement("style");
+    style.textContent = `
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: scale(0.8); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+    `;
+    document.head.appendChild(style);
+}
+
+</script>
                 </div>
             </div>
             <div class="container">

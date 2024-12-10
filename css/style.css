@@ -27,31 +27,78 @@
     text-align: center; /* Assure que le contenu reste centré */
 }
 
-.Price {
-    margin-top: auto; /* Place le bouton en bas de la carte */
-    align-self: stretch; /* Le bouton prendra toute la largeur */
-    text-align: center;
-    color: #a91111;
-    font-weight: bold;
-    font-size: 1rem;
-    padding: 10px 20px;
-    border: none;
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu-item:hover {
+    transform: translateY(-10px);
     transition: all 0.3s ease-in-out;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
-
-
-.price-label {
-    position: absolute;
-    top: -10px; /* Position au-dessus du bouton */
-    left: -10px; /* Position à gauche */
-    background-color: #ffcc00; /* Couleur de fond pour démarquer */
-    color: #333;
-    padding: 5px;
-    font-size: 12px;
+.menu-item img {
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.menu-item:hover img {
+    transform: scale(1.1);
+}
+.btn {
+    transition: background-color 0.3s, transform 0.3s;
+}
+.btn:hover {
+    background-color: #ff6600;
+    transform: scale(1.1);
+}
+.price {
+    font-size: 1.2rem;
     font-weight: bold;
-    border-radius: 5px;
+    color: #333;
 }
+
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu-item:hover {
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
+}
+.menu-item img {
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.menu-item:hover img {
+    transform: scale(1.1);
+}
+
+.testimonial-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+.testimonial-item img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+.testimonial-item:hover {
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
+}
+.btn {
+    transition: background-color 0.3s, transform 0.3s;
+}
+.btn:hover {
+    background-color: #ff6600;
+    transform: scale(1.1);
+}
+
 
 
 .col-lg-3 {
