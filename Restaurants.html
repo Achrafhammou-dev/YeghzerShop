@@ -290,6 +290,7 @@
         showCustomPopup("An error occurred. Please try again.");
     });
 });
+
 // Function to display a creative custom pop-up
 function showCustomPopup(message) {
     // Create the overlay background
@@ -333,24 +334,6 @@ function showCustomPopup(message) {
     icon.style.color = "#28a745";
     popup.prepend(icon);
 
-    // Add a close button
-    const closeButton = document.createElement("button");
-    closeButton.textContent = "Close";
-    closeButton.style.marginTop = "15px";
-    closeButton.style.padding = "10px 20px";
-    closeButton.style.backgroundColor = "#28a745";
-    closeButton.style.border = "none";
-    closeButton.style.color = "#fff";
-    closeButton.style.borderRadius = "5px";
-    closeButton.style.cursor = "pointer";
-    closeButton.style.transition = "background-color 0.3s";
-    closeButton.onmouseover = () => (closeButton.style.backgroundColor = "#218838");
-    closeButton.onmouseout = () => (closeButton.style.backgroundColor = "#28a745");
-    closeButton.onclick = function () {
-        document.body.removeChild(overlay); // Remove the overlay and pop-up when clicked
-    };
-    popup.appendChild(closeButton);
-
     // Append the pop-up to the overlay
     overlay.appendChild(popup);
 
@@ -366,8 +349,12 @@ function showCustomPopup(message) {
         }
     `;
     document.head.appendChild(style);
-}
 
+    // Automatically remove the pop-up after 2 seconds
+    setTimeout(() => {
+        document.body.removeChild(overlay); // Remove the overlay and pop-up
+    }, 2000); // 2000ms = 2 seconds
+}
 </script>
                 </div>
             </div>
