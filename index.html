@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Burger King Morocco</title>
+    <title>YaghzerShop</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -14,7 +14,13 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+
+
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -27,7 +33,7 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="img/logo.png" rel="icon" type="image/x-icon">
+    <link href="img/Yeghzer.png" rel="icon" type="image/x-icon">
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
@@ -49,7 +55,7 @@
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
                 <a href="index.html" class="navbar-brand p-0">
                  <!--  -->
-                    <img src="img/logo.png" alt="Logo">
+                    <img src="img/yeghzer.png" alt="Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
@@ -57,9 +63,10 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0 pe-4">
                         <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Service</a>
-                        <a href="menu.html" class="nav-item nav-link">Menu</a>
+                        <a href="index.html" class="nav-item nav-link">Boutique</a>
+                        <a href="index.html" class="nav-item nav-link">About</a>
+                        <a href="index.html" class="nav-item nav-link">contact</a>
+                        
                         <!-- <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu m-0">
@@ -68,52 +75,45 @@
                                 <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                             </div>
                         </div> -->
-                        <a href="Restaurants.html" class="nav-item nav-link">Restaurants</a>
+                        <!-- <a href="Restaurants.html" class="nav-item nav-link">Restaurants</a> -->
                     </div>
                      
                 </div>
             </nav>
 
-            <div class="container-xxl py-5 bg-dark hero-header mb-5">
-                <div class="container my-5 py-5">
+            <div class="container-xxl py-5 bg-dark hero-header mb-5 position-relative">
+                <!-- Background Video -->
+                <video id="background-video" class="position-absolute top-0 start-0 w-100 h-100" autoplay muted loop playsinline>
+                    <source src="img/hero.mp4" type="video/mp4">
+                </video>
+                
+                <!-- Content Section -->
+                <div class="container position-relative text-white my-5 py-5">
                     <div class="row align-items-center g-5">
+                        <!-- Left Content -->
                         <div class="col-lg-6 text-center text-lg-start">
-                            <h1 class="display-3 text-white animated slideInLeft">Enjoy Our<br>Delicious Burger</h1>
-                            <p class="text-white animated slideInLeft mb-4 pb-2">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                            <!-- <a href="" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Book A Table</a> -->
+                            <h1 class="display-3 animated slideInLeft" style="font-family: 'Bebas Neue', sans-serif;
+  font-weight: 700; /* Bold for emphasis */">From Bikers<br>To Bikers</h1>
+                            <!-- <p class="animated slideInLeft mb-4 pb-2">
+                                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. 
+                                Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet.
+                            </p> -->
                         </div>
-                        <div id="heroCarousel" class="carousel slide col-lg-6 text-center text-lg-end overflow-hidden" data-bs-ride="carousel">
-                            <!-- Indicators -->
-                            <div class="carousel-indicators">
-                                <button style="display: none;" type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button style="display: none;" type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button style="display: none;" type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            </div>
                         
-                            <!-- Carousel Items -->
+                        <!-- Carousel -->
+                        <div id="heroCarousel" class="carousel slide col-lg-6 text-center text-lg-end overflow-hidden" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="img/cheese.png" class="d-block w-100 img-fluid" style="padding: 32px;" alt="Hero Image 1">
+                                    <img src="img/Gloves.png" class="d-block w-100 img-fluid" style="padding: 32px;" alt="Hero Image 1">
                                 </div>
                                 <div class="carousel-item">
-                                <img src="img/chicken.png" class="d-block w-100 img-fluid"  style="padding: 32px;"  alt="Hero Image 2">
+                                    <img src="img/Helmets.png" class="d-block w-100 img-fluid" style="padding: 32px;" alt="Hero Image 2">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="img/beef.png" class="d-block w-100 img-fluid"  style="padding: 32px;"  alt="Hero Image 3">
+                                    <img src="img/cach.png" class="d-block w-100 img-fluid" style="padding: 32px;" alt="Hero Image 3">
                                 </div>
                             </div>
-                        
-                            <!-- Controls -->
-                            <button style="display: none;" class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button style="display: none;" class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
                         </div>
-                        
                     </div>
                 </div>
             </div>
@@ -143,46 +143,58 @@
                                 </li> -->
                                 <li class="nav-item">
                                     <a class="d-flex align-items-center text-start mx-3 pb-3 active" data-bs-toggle="pill" href="#tab-1">
-                                        <i class="fa fa-hamburger fa-2x text-primary"></i>
-                                        <div class="ps-3">
-                                            <small class="text-body">Special</small>
-                                            <h6 class="mt-n1 mb-0">Launch</h6>
-                                        </div>
+                                        <i class="fa-solid fa-circle" style="color: #ffffff;"></i>
+                                        <!-- <div class="ps-3">
+                                            <small class="text-body">New</small> -->
+                                            <!-- <h6 class="mt-n1 mb-0">New</h6> 
+                                        </div>-->
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill" href="#tab-2">
-                                        <i class="fa fa-ice-cream fa-2x text-primary"></i>
-                                        <div class="ps-3">
-                                            <small class="text-body">Meal</small>
-                                            <h6 class="mt-n1 mb-0">Burger</h6>
-                                        </div>
+                                        <i class="fa-solid fa-circle" style="color: #d0304c;"></i>
+                                         <!-- <div class="ps-3">
+                                            * <small class="text-body">Meal</small> -->
+                                            <!-- <h6 class="mt-n1 mb-0">Promotions</h6> 
+                                        </div> -->
                                     </a>
                                 </li>
+
+                                <li class="nav-item">
+                                    <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill" href="#tab-3">
+                                        <i class="fa-solid fa-circle" style="color: #000000;"></i>
+                                            <!--  <div class="ps-3">
+                                           <small class="text-body">Meal</small> -->
+                                            <!-- <h6 class="mt-n1 mb-0"></h6> 
+                                        </div>-->
+                                    </a>
+                                </li>
+
+
                             </ul>
 
                             <div class="tab-content">
                                 <div id="tab-1" class="tab-pane fade show p-0 active">
                                     <div class="owl-carousel testimonial-carousel">
                                         <!-- Item 1 -->
-                                        <div class="testimonial-item d-flex flex-column align-items-center justify-content-center text-center p-4 border rounded shadow-sm" style="background: #f8f9fa; height: 350px;">
-                                            <img class="img-fluid rounded-circle mb-3" src="https://cdn.getsolo.io/172474798366cd90cf26cc8_King%20Fish%20Spicy.png" style="width: 180px; height: 200px;">
-                                            <h5 class="mb-2 font-weight-bold" style="min-height: 50px;">Menu King Fish Spicy</h5>
-                                            <p class="text-muted mb-0" style="min-height: 50px;">Delicious and spicy king fish lovers!</p>
+                                        <div class="testimonial-item d-flex flex-column align-items-center justify-content-center text-center p-4 border rounded shadow-sm" style=" height: 350px;">
+                                            <img class="img-fluid rounded-circle mb-3" src="img/mask.png" style="width: 180px; height: 200px;">
+                                            <h5 class="mb-2 font-weight-bold" style="min-height: 50px;">Fuinloth Balaclava Ski Mask</h5>
+                                            <p class="text-muted mb-0" style="min-height: 50px;"></p>
                                         </div>
                                 
                                         <!-- Item 2 -->
-                                        <div class="testimonial-item d-flex flex-column align-items-center justify-content-center text-center p-4 border rounded shadow-sm" style="background: #f8f9fa; height: 350px;">
-                                            <img class="img-fluid rounded-circle mb-3" src="https://cdn.getsolo.io/172474810066cd91442b331_Triple%20Whopper.png" style="width: 180px; height: 200px;">
-                                            <h5 class="mb-2 font-weight-bold" style="min-height: 50px;">Menu Triple Whopper</h5>
-                                            <p class="text-muted mb-0" style="min-height: 50px;">Three layers of juicy goodness for the ultimate burger experience.</p>
+                                        <div class="testimonial-item d-flex flex-column align-items-center justify-content-center text-center p-4 border rounded shadow-sm" style="height: 350px;">
+                                            <img class="img-fluid rounded-circle mb-3" src="img/mask.png" style="width: 180px; height: 200px;">
+                                            <h5 class="mb-2 font-weight-bold" style="min-height: 50px;">Fuinloth Balaclava Ski Mask</h5>
+                                            <p class="text-muted mb-0" style="min-height: 50px;"></p>
                                         </div>
                                 
                                         <!-- Item 3 -->
-                                        <div class="testimonial-item d-flex flex-column align-items-center justify-content-center text-center p-4 border rounded shadow-sm" style="background: #f8f9fa; height: 350px;">
-                                            <img class="img-fluid rounded-circle mb-3" src="https://cdn.getsolo.io/172474830466cd921027d0f_Double%20Chicken%20Royal.png" style="width: 180px; height: 200px;">
-                                            <h5 class="mb-2 font-weight-bold" style="min-height: 50px;">Menu Double Chicken Royal ®</h5>
-                                            <p class="text-muted mb-0" style="min-height: 50px;">Double the chicken, double the satisfaction. A royal treat!</p>
+                                        <div class="testimonial-item d-flex flex-column align-items-center justify-content-center text-center p-4 border rounded shadow-sm" style="height: 350px;">
+                                            <img class="img-fluid rounded-circle mb-3" src="img/mask.png" style="width: 180px; height: 200px;">
+                                            <h5 class="mb-2 font-weight-bold" style="min-height: 50px;">Fuinloth Balaclava Ski Mask</h5>
+                                            <p class="text-muted mb-0" style="min-height: 50px;"></p>
                                         </div>
                                     </div>
                                 </div>
@@ -190,29 +202,54 @@
                                 <div id="tab-2" class="tab-pane fade show p-0">
                                     <div class="owl-carousel testimonial-carousel">
                                         <!-- Item 1 -->
-                                        <div class="testimonial-item d-flex flex-column align-items-center justify-content-center text-center p-4 border rounded shadow-sm" style="background: #f8f9fa; height: 350px;">
-                                            <img class="img-fluid rounded-circle mb-3" src="https://cdn.getsolo.io/172475043166cd9a5fe5639_Sundae%20fraise.png" style="width: 180px; height: 200px;">
-                                            <h5 class="mb-2 font-weight-bold" style="min-height: 50px;">Sundae Fraise</h5>
-                                            <p class="text-muted mb-0" style="min-height: 50px;">A sweet and refreshing strawberry sundae treat!</p>
+                                        <div class="testimonial-item d-flex flex-column align-items-center justify-content-center text-center p-4 border rounded shadow-sm" style=" height: 350px;">
+                                            <img class="img-fluid rounded-circle mb-3" src="img/masky.png" style="width: 180px; height: 200px;">
+                                            <h5 class="mb-2 font-weight-bold" style="min-height: 50px;">Fuinloth Balaclava Ski Mask</h5>
+                                            <p class="text-muted mb-0" style="min-height: 50px;"></p>
                                         </div>
                                 
                                         <!-- Item 2 -->
-                                        <div class="testimonial-item d-flex flex-column align-items-center justify-content-center text-center p-4 border rounded shadow-sm" style="background: #f8f9fa; height: 350px;">
-                                            <img class="img-fluid rounded-circle mb-3" src="https://cdn.getsolo.io/172475037766cd9a290acda_Sundae%20Chocolat.png" style="width: 180px; height: 200px;">
-                                            <h5 class="mb-2 font-weight-bold" style="min-height: 50px;">Sundae Chocolat</h5>
-                                            <p class="text-muted mb-0" style="min-height: 50px;">Indulge in the rich and creamy chocolate sundae.</p>
+                                        <div class="testimonial-item d-flex flex-column align-items-center justify-content-center text-center p-4 border rounded shadow-sm" style=" height: 350px;">
+                                            <img class="img-fluid rounded-circle mb-3" src="img/masky.png" style="width: 180px; height: 200px;">
+                                            <h5 class="mb-2 font-weight-bold" style="min-height: 50px;">Fuinloth Balaclava Ski Mask</h5>
+                                            <p class="text-muted mb-0" style="min-height: 50px;"></p>
                                         </div>
                                 
                                         <!-- Item 3 -->
-                                        <div class="testimonial-item d-flex flex-column align-items-center justify-content-center text-center p-4 border rounded shadow-sm" style="background: #f8f9fa; height: 350px;">
-                                            <img class="img-fluid rounded-circle mb-3" src="https://s3.eu-west-1.amazonaws.com/solo.uploads/15841056045e6b8884868a4_phpADMEsE" style="width: 180px; height: 200px;">
-                                            <h5 class="mb-2 font-weight-bold" style="min-height: 50px;">Sundae Oreo</h5>
-                                            <p class="text-muted mb-0" style="min-height: 50px;">A crunchy twist of Oreo pieces in a creamy sundae.</p>
+                                        <div class="testimonial-item d-flex flex-column align-items-center justify-content-center text-center p-4 border rounded shadow-sm" style="height: 350px;">
+                                            <img class="img-fluid rounded-circle mb-3" src="img/masky.png" style="width: 180px; height: 200px;">
+                                            <h5 class="mb-2 font-weight-bold" style="min-height: 50px;">Fuinloth Balaclava Ski Mask</h5>
+                                            <p class="text-muted mb-0" style="min-height: 50px;">A</p>
                                         </div>
                                     </div>
                                 </div>
                                 
 
+                                <div id="tab-3" class="tab-pane fade show p-0">
+                                    <div class="owl-carousel testimonial-carousel">
+                                        <!-- Item 1 -->
+                                        <div class="testimonial-item d-flex flex-column align-items-center justify-content-center text-center p-4 border rounded shadow-sm" style=" height: 350px;">
+                                            <img class="img-fluid rounded-circle mb-3" src="https://m.media-amazon.com/images/I/61EnzjUYqzL.SS700.jpg" style="width: 180px; height: 200px;">
+                                            <h5 class="mb-2 font-weight-bold" style="min-height: 50px;">Fuinloth Balaclava Ski Mask</h5>
+                                            <p class="text-muted mb-0" style="min-height: 50px;"></p>
+                                        </div>
+                                
+                                        <!-- Item 2 -->
+                                        <div class="testimonial-item d-flex flex-column align-items-center justify-content-center text-center p-4 border rounded shadow-sm" style=" height: 350px;">
+                                            <img class="img-fluid rounded-circle mb-3" src="https://m.media-amazon.com/images/I/61EnzjUYqzL.SS700.jpg" style="width: 180px; height: 200px;">
+                                            <h5 class="mb-2 font-weight-bold" style="min-height: 50px;">Fuinloth Balaclava Ski Mask</h5>
+                                            <p class="text-muted mb-0" style="min-height: 50px;"></p>
+                                        </div>
+                                
+                                        <!-- Item 3 -->
+                                        <div class="testimonial-item d-flex flex-column align-items-center justify-content-center text-center p-4 border rounded shadow-sm" style="height: 350px;">
+                                            <img class="img-fluid rounded-circle mb-3" src="https://m.media-amazon.com/images/I/61EnzjUYqzL.SS700.jpg" style="width: 180px; height: 200px;">
+                                            <h5 class="mb-2 font-weight-bold" style="min-height: 50px;">Fuinloth Balaclava Ski Mask</h5>
+                                            <p class="text-muted mb-0" style="min-height: 50px;"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
                                 
 
                                 <!-- <div id="tab-2" class="tab-pane fade show p-0">
@@ -423,57 +460,7 @@
 
 
 
-        <!-- Service Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="row g-4">
-                    <!-- Card 1 -->
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="service-item rounded pt-3" style="height: 320px;">
-                            <div class="p-4 text-center">
-                                <i class="fa fa-3x fa-hamburger text-primary mb-4"></i>
-                                <h5 class="mb-3">Nos Burgers</h5>
-                                <p>Savourez nos burgers iconiques, préparés avec des ingrédients locaux pour un goût inégalé.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card 2 -->
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item rounded pt-3" style="height: 320px;">
-                            <div class="p-4 text-center">
-                                <i class="fa fa-3x fa-shipping-fast text-primary mb-4"></i>
-                                <h5 class="mb-3">Livraison Express</h5>
-                                <p>Faites-vous livrer vos menus préférés rapidement, partout au Maroc, avec Burger King Delivery.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card 3 -->
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="service-item rounded pt-3" style="height: 320px;">
-                            <div class="p-4 text-center">
-                                <i class="fa fa-3x fa-mobile-alt text-primary mb-4"></i>
-                                <h5 class="mb-3">Commande Facile</h5>
-                                <p>Commandez directement depuis notre application ou notre site web pour une expérience fluide.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card 4 -->
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="service-item rounded pt-3" style="height: 320px;">
-                            <div class="p-4 text-center">
-                                <i class="fa fa-3x fa-clock text-primary mb-4"></i>
-                                <h5 class="mb-3">Ouvert 24/7</h5>
-                                <p>Dégustez vos burgers préférés à toute heure, grâce à nos restaurants ouverts jour et nuit.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
 
-
-        <!-- Service End -->
 
 
 
@@ -499,18 +486,18 @@
                         </div>
                     </div> -->
                     <div class="testimonial-item d-flex flex-column align-items-center justify-content-center text-center">
-                        <img class="img-fluid rounded-circle mb-3" src="https://cdn.getsolo.io/172475043166cd9a5fe5639_Sundae%20fraise.png" style="width: 180px; height: 200px;">
-                        <h5 class="mb-0">Sundae fraise</h5>
+                        <img class="img-fluid rounded-circle mb-3" src="img/masky.png" style="width: 180px; height: 200px;">
+                        <h5 class="mb-0">Mask</h5>
                     </div>
 
                     <div class="testimonial-item d-flex flex-column align-items-center justify-content-center text-center">
-                        <img class="img-fluid rounded-circle mb-3" src="https://cdn.getsolo.io/172474798366cd90cf26cc8_King%20Fish%20Spicy.png" style="width: 180px; height: 200px;">
-                        <h5 class="mb-0">King Fish</h5>
+                        <img class="img-fluid rounded-circle mb-3" src="img/Gloves.png" style="width: 180px; height: 200px;">
+                        <h5 class="mb-0">Gloves</h5>
                     </div>
 
                     <div class="testimonial-item d-flex flex-column align-items-center justify-content-center text-center">
-                        <img class="img-fluid rounded-circle mb-3" src="https://s3.eu-west-1.amazonaws.com/solo.uploads/15841056045e6b8884868a4_phpADMEsE" style="width: 180px; height: 200px;">
-                        <h5 class="mb-0">Sundae Oreo</h5>
+                        <img class="img-fluid rounded-circle mb-3" src="img/mask.png" style="width: 180px; height: 200px;">
+                        <h5 class="mb-0">Mask</h5>
                     </div>
                     
 <!--                     
@@ -542,9 +529,62 @@
         <!-- Testimonial End -->
 
 
+                <!-- Service Start -->
+                <div class="container-xxl py-5">
+                    <div class="container">
+                        <div class="row g-4">
+                            <!-- Card 1 -->
+                            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="service-item rounded pt-3" style="height: 320px;">
+                                    <div class="p-4 text-center">
+                                        <i class="fa fa-3x fa-bicycle text-primary mb-4"></i>
+                                        <h5 class="mb-3">Premium Accessories</h5>
+                                        <p>Discover high-quality bike accessories designed for durability and performance.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 2 -->
+                            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                                <div class="service-item rounded pt-3" style="height: 320px;">
+                                    <div class="p-4 text-center">
+                                        <i class="fa fa-3x fa-truck text-primary mb-4"></i>
+                                        <h5 class="mb-3">Fast Delivery</h5>
+                                        <p>Get your orders delivered quickly to your doorstep, no matter where you are.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 3 -->
+                            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                                <div class="service-item rounded pt-3" style="height: 320px;">
+                                    <div class="p-4 text-center">
+                                        <i class="fa fa-3x fa-shopping-cart text-primary mb-4"></i>
+                                        <h5 class="mb-3">Easy Shopping</h5>
+                                        <p>Shop effortlessly on our user-friendly website with a wide selection of products.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 4 -->
+                            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                                <div class="service-item rounded pt-3" style="height: 320px;">
+                                    <div class="p-4 text-center">
+                                        <i class="fa fa-3x fa-headset text-primary mb-4"></i>
+                                        <h5 class="mb-3">24/7 Support</h5>
+                                        <p>Our dedicated support team is available around the clock to assist you.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+        
+        
+                <!-- Service End -->
+
         
 
-        <!-- About Start -->
+        <!-- About Start
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="row g-5 align-items-center">
@@ -568,7 +608,7 @@
                         <h5 class="section-title ff-secondary text-start text-primary fw-normal">About Us</h5>
                         <h1 class="mb-4">Welcome to Burger King®</h1>
                         <p class="mb-4">Since 1954, Burger King® has been proudly serving delicious, flame-grilled burgers to millions of guests worldwide. Known as the "Home of the Whopper®," we’re all about delivering high-quality food with bold flavors, cooked fresh just for you.</p>
-                        <p class="mb-4">At Burger King Morocco, we strive to bring the same iconic taste and experience to every customer, blending international standards with local flavors. Whether you're craving a classic Whopper®, crispy fries, or a refreshing beverage, our menu has something for everyone.</p>
+                        <p class="mb-4">At YaghzerShop, we strive to bring the same iconic taste and experience to every customer, blending international standards with local flavors. Whether you're craving a classic Whopper®, crispy fries, or a refreshing beverage, our menu has something for everyone.</p>
                         
                         <div id="extra-content" class="d-none">
                             <p class="mb-4">Since opening our first restaurant in Morocco, we’ve expanded to serve communities across the country. Our mission is to create memorable dining experiences while staying true to the iconic Burger King values. Join us as we continue to flame-grill burgers and create amazing memories for our customers in Morocco!</p>
@@ -584,7 +624,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- <div class="col-sm-6">
+                            <div class="col-sm-6">
                                 <div class="d-flex align-items-center border-start border-5 border-primary px-3">
                                     <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">1M+</h1>
                                     <div class="ps-4">
@@ -592,7 +632,7 @@
                                         <h6 class="text-uppercase mb-0">Customers Served</h6>
                                     </div>
                                 </div>
-                            </div> -->
+                            </div> 
                         </div>
                         
                         <a id="learn-more-btn" class="btn btn-primary py-3 px-5 mt-2" href="javascript:void(0)">Learn More</a>
@@ -615,7 +655,7 @@
                 </div>
             </div>
         </div>
-        <!-- About End -->
+         About End -->
 
 
 
@@ -781,13 +821,13 @@
                         <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Company</h4>
                         <a class="btn btn-link" href="">About Us</a>
                         <a class="btn btn-link" href="">Contact Us</a>
-                        <a class="btn btn-link" href="menu.html">Menu</a>
+                        <a class="btn btn-link" href="">Menu</a>
                         <a class="btn btn-link" href="">Privacy Policy</a>
                         <a class="btn btn-link" href="">Terms & Condition</a>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Bd ANFA , Casablanca , Morocco</p>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Casablanca , Morocco</p>
                         <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+112 512121212</p>
                         <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
                         <div class="d-flex pt-2">
@@ -810,7 +850,7 @@
                             <p>Hungry for great deals? Subscribe to our newsletter for exclusive offers, promotions!</p>
                             <div class="position-relative mx-auto" style="max-width: 400px;">
                                 <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="email" name="email" placeholder="Your email" required>
-                                <button type="submit" name="submit" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                                <button type="submit" name="submit" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Sign Up</button>
                             </div>
                     </form>
                     </div>
@@ -820,7 +860,7 @@
 
     const form = e.target;
     const formData = new FormData(form);
-    const url = "https://script.google.com/macros/s/AKfycbw0e86g6UDVLISw1gwPBZ6tiX4CN_IFjVcNsToAhzDYPEMz32GXbfjv56gQqKdqbsHp/exec";
+    const url = "https://script.google.com/macros/s/AKfycbzSGSdNDJ0r0u2TLyvfQwD-O9039vmLFVpA7zSyLnUJscPcZZx8VbQS7PHlXP4knGaw/exec";
 
     // Send the form data to the Apps Script URL
     fetch(url, {
@@ -915,7 +955,7 @@ function showCustomPopup(message) {
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">General First Food</a>, All Right Reserved. 
+                            &copy; <a class="border-bottom" href="#">YeghzerShop Website</a>, All Right Reserved. 
 							 
                         </div>
                         <div class="col-md-6 text-center text-md-end">

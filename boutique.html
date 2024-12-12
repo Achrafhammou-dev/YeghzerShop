@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Burger King Morocco</title>
+    <title>YaghzerShop</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -14,7 +14,11 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -27,7 +31,7 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="img/logo.png" rel="icon" type="image/x-icon">
+    <link href="img/Yeghzer.png" rel="icon" type="image/x-icon">
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
@@ -49,7 +53,7 @@
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
                 <a href="index.html" class="navbar-brand p-0">
                     <!--  -->
-                    <img src="img/logo.png" alt="Logo">
+                    <img src="img/yeghzer.png" alt="Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
@@ -57,9 +61,10 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0 pe-4">
                         <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="boutique.html" class="nav-item nav-link active">Boutique</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Service</a>
-                        <a href="menu.html" class="nav-item nav-link active">Menu</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        
                         <!-- <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu m-0">
@@ -68,7 +73,7 @@
                                 <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                             </div>
                         </div> -->
-                        <a href="Restaurants.html" class="nav-item nav-link">Restaurants</a>
+                        <!-- <a href="Restaurants.html" class="nav-item nav-link">Restaurants</a> -->
                     </div>
                      
                 </div>
@@ -323,7 +328,7 @@
                             <p>Hungry for great deals? Subscribe to our newsletter for exclusive offers, promotions!</p>
                             <div class="position-relative mx-auto" style="max-width: 400px;">
                                 <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="email" name="email" placeholder="Your email" required>
-                                <button type="submit" name="submit" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                                <button type="submit" name="submit" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Sign Up</button>
                             </div>
                     </form>
                     </div>
@@ -333,7 +338,7 @@
 
     const form = e.target;
     const formData = new FormData(form);
-    const url = "https://script.google.com/macros/s/AKfycbw0e86g6UDVLISw1gwPBZ6tiX4CN_IFjVcNsToAhzDYPEMz32GXbfjv56gQqKdqbsHp/exec";
+    const url = "https://script.google.com/macros/s/AKfycbzSGSdNDJ0r0u2TLyvfQwD-O9039vmLFVpA7zSyLnUJscPcZZx8VbQS7PHlXP4knGaw/exec";
 
     // Send the form data to the Apps Script URL
     fetch(url, {
@@ -428,7 +433,7 @@ function showCustomPopup(message) {
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">General First Food</a>, All Right Reserved. 
+                            &copy; <a class="border-bottom" href="#">YeghzerShop Website</a>, All Right Reserved. 
 							 
                         </div>
                         <div class="col-md-6 text-center text-md-end">

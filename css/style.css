@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: rgb(214, 35, 0);
+    --primary: rgb(203 162 49) !important;
     --light: #F1F8FF;
     --dark: #0F172B;
 }
@@ -54,7 +54,7 @@
 .price {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #333;
+    color: #ffffff;
 }
 
 
@@ -134,7 +134,7 @@
 
 
 .ff-secondary {
-    font-family: 'Cooper Black', 'Arial Black', serif;
+    font-family: 'Montserrat', 'Arial Black', serif;
 }
 
 .fw-medium {
@@ -171,7 +171,7 @@
 
 /*** Button ***/
 .btn {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     text-transform: uppercase;
     transition: .5s;
@@ -215,7 +215,7 @@
     margin-left: 25px;
     padding: 35px 0;
     font-size: 15px;
-    color: rgb(80, 35, 20) !important;
+    color: rgb(149 139 111 / 92%) !important;
     text-transform: uppercase;
     font-weight: 500;
     outline: none;
@@ -273,17 +273,22 @@
     
     .sticky-top.navbar-dark {
         position: fixed;
-        background: rgb(245, 235, 220) !important;
-    }
+        background: linear-gradient(135deg, #1c1c1c, #000000, #000000, #2a2a2a, #000000) !important
+        }
 }
 
 
 /*** Hero Header ***/
+#background-video {
+    object-fit: cover;
+    z-index: -1; /* Ensures the video stays behind the content */
+}
 .hero-header {
-    background:linear-gradient(rgb(139 139 139 / 90%), rgb(113 60 3 / 90%)), url(../img/Background.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    position: relative;
+    overflow: hidden; /* Ensures the video doesn't exceed the bounds */
+}
+.container-xxl {
+    z-index: 1; /* Ensures text and carousel are above the video */
 }
 
 .hero-header img {
@@ -520,12 +525,12 @@
 }
 
 .testimonial-carousel .owl-item.center .testimonial-item {
-    background: rgb(245 235 220) !important;
-    border-color: rgb(245 235 220) !important;
+    /* background: rgb(245 235 220) !important;
+    border-color: rgb(245 235 220) !important; */
 }
 
 .testimonial-carousel .owl-item.center .testimonial-item * {
-    color: rgb(80, 35, 20) !important;
+    color: rgb(255, 255, 255) !important;
 }
 
 .testimonial-carousel .owl-dots {
@@ -560,8 +565,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #502314;
-    border: 1px solid #502314;
+    color: #cba231;
+    border: 1px solid #cba231;
     border-radius: 35px;
     transition: .3s;
 }
@@ -575,7 +580,7 @@
     margin-bottom: 5px;
     padding: 0;
     text-align: left;
-    color: rgb(80, 35, 20) !important;
+    color: rgb(255, 255, 255) !important;
     font-size: 15px;
     font-weight: normal;
     text-transform: capitalize;
@@ -585,7 +590,7 @@
 .footer .btn.btn-link::before {
     position: relative;
     content: "\f105";
-    font-family: "Font Awesome 5 Free";
+    font-family: 'Montserrat', 'Arial Black', serif;
     font-weight: 900;
     margin-right: 10px;
 }
@@ -602,7 +607,7 @@
 }
 
 .footer .copyright a {
-    color: rgb(80, 35, 20) !important;
+    color: rgb(255, 255, 255) !important;
 }
 
 .footer .footer-menu a {
